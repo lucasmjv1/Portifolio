@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Fale Conosco — Portfolio</title>
+	<link rel="stylesheet" href="../CSS/port.css">
+	<link rel="icon" type="image/png" href="../ICONS/porticon.jpg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+	<div class="topbar">
+		<div class="logo">Lucas<span class="highlight">Portfólio</span></div>
+		<nav class="nav-links">
+			<a href="../HTML/index.html">Home</a>
+			<a href="../HTML/projects.html">Projetos</a>
+			<a href="../HTML/resume.html">Resumo</a>
+			<a href="../HTML/contact.html" class="cta-link" target="_blank" rel="noopener noreferrer">Contato</a>
+		</nav>
+	</div>
+
+	<section class="section-offset">
+		<div class="hero">
+			<h1>Fale conosco</h1>
+			<p class="section-subtitle">Tem uma dúvida, proposta ou quer trabalhar junto? Escolha uma opção abaixo — prometo responder rápido.</p>
+		</div>
+
+		<div class="grid grid--spaced-36">
+			<div class="project-card">
+				<h3>Atendimento</h3>
+				<p class="muted">Horário de atendimento: seg–sex, 9:00–17:00. Atendimento via email e WhatsApp.</p>
+
+				<div class="flex-gap-12 mt-16">
+					<a href="mailto:seuemail@exemplo.com" class="btn-secondary">Enviar email</a>
+					<a href="https://wa.me/5538998867796" target="_blank" class="btn-secondary">Abrir WhatsApp</a>
+				</div>
+
+				<div class="mt-18 muted flex-gap-12">
+					<i class="fas fa-phone" style="font-size:18px;color:var(--text-secondary)"></i>
+					<span>+55 38 99886-7796</span>
+				</div>
+			</div>
+
+			<div class="project-card">
+				<h3>Localização</h3>
+				<p class="muted">Atendo remotamente. Disponível para trabalhos nacionais e remotos internacionais.</p>
+
+				<div class="mt-16 flex-gap-12">
+					<i class="fas fa-map-marker-alt" style="font-size:18px;color:var(--text-secondary)"></i>
+					<span>Minas Gerais, Brasil</span>
+				</div>
+
+				<!--<div style="margin-top:20px;">
+					<div class="testimonial">
+						<p>"Resposta rápida, entrega pontual e muita atenção aos detalhes. Recomendo."</p>
+						<span>— Cliente satisfeito</span>
+					</div>-->
+				</div>
+			</div>
+            <br>
+            <br>
+
+			<div class="project-card">
+				<h3>Serviços</h3>
+				<p class="muted">Consultoria, desenvolvimento web, apps mobile e integração de APIs.</p>
+
+				<div class="mt-14 flex-column">
+					<div class="card card-small flex-gap-12">
+						<i class="fas fa-lightbulb" style="color:var(--accent);width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:rgba(0,224,198,0.07)"></i>
+						<div>
+							<strong>Ideação & Prototipagem</strong>
+							<div class="muted" style="font-size:0.9rem">Workshops, wireframes e protótipos rápidos.</div>
+						</div>
+					</div>
+					<br>
+
+					<div class="card card-small flex-gap-12">
+						<i class="fas fa-code" style="color:var(--accent);width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:rgba(0,224,198,0.07)"></i>
+						<div>
+							<strong>Desenvolvimento</strong>
+							<div class="muted" style="font-size:0.9rem">Front‑end, back‑end e apps mobile.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+
+
+		</div>
+
+		<div class="mt-40" style="display:grid; grid-template-columns: 1fr 420px; gap:28px;">
+			<div class="card">
+				<h3>Perguntas frequentes</h3>
+				<div style="margin-top:12px;display:flex;flex-direction:column;gap:10px;">
+					<div class="process-item" style="background:transparent;padding:10px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);">
+						<strong>Qual o prazo médio?</strong>
+						<p style="color:var(--text-secondary);margin-top:6px">Projetos pequenos: 1–3 semanas. Projetos maiores: orçamento e roadmap.</p>
+					</div>
+
+					<div class="process-item" style="background:transparent;padding:10px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);">
+						<strong>Você aceita pagamentos por etapa?</strong>
+						<p style="color:var(--text-secondary);margin-top:6px">Sim — geralmente dividimos em marcos com entregas claras.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-card">
+				<h3>Prefere escrever?</h3>
+				<p class="muted mb-12">Prefere escrever? Envie uma mensagem rápida abaixo — respondo em até 24h em dias úteis.</p>
+
+				<form id="contactForm" action="https://formspree.io/f/meeqjdan" target="_blank" method="POST">
+					<div class="form-row">
+						<input name="nome" placeholder="Seu nome" class="form-control" required>
+						<input name="email" type="email" placeholder="Seu email" class="form-control" required>
+						<textarea name="mensagem" rows="6" placeholder="Mensagem" class="form-control" required></textarea>
+						<div class="flex-gap-12">
+							<button type="submit" class="btn-primary">Enviar</button>
+							<button type="reset" class="btn-secondary">Limpar</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="final-cta" style="margin-top:48px;">
+			<h2>Pronto para começar?</h2>
+			<a href="../HTML/contact.html" class="cta-button" target="_blank" rel="noopener noreferrer">Fale comigo</a>
+		</div>
+
+	</section>
+</body>
+</html>
